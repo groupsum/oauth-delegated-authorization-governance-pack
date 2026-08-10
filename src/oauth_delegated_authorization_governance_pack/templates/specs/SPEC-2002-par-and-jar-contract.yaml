@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:par-and-jar-contract",
+  "number": 2002,
+  "slug": "par-and-jar-contract",
+  "title": "PAR And JAR Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines pushed and signed authorization request profiles.",
+  "body": "## Requirements\n\n- Authenticate pushed authorization requests where required.\n- Integrity-protect request parameters.\n- Bind request objects and request URIs to the initiating client.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9700",
+    "https://www.rfc-editor.org/rfc/rfc6749"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "oauth",
+    "delegated-authorization",
+    "scopes",
+    "pkce",
+    "consent"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:oauth-scopes-are-delegated-grants-not-application-permissions",
+    "adr:oauth-deployments-follow-the-current-security-bcp",
+    "adr:client-redirect-and-resource-boundaries-are-explicit"
+  ]
+}

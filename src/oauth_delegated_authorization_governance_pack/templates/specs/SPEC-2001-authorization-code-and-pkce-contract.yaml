@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:authorization-code-and-pkce-contract",
+  "number": 2001,
+  "slug": "authorization-code-and-pkce-contract",
+  "title": "Authorization Code And PKCE Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines authorization code flow and PKCE requirements.",
+  "body": "## Requirements\n\n- Use authorization code with PKCE for user-facing clients.\n- Bind codes to client, redirect URI, and verifier.\n- Reject code replay and verifier mismatch.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9700",
+    "https://www.rfc-editor.org/rfc/rfc6749"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "oauth",
+    "delegated-authorization",
+    "scopes",
+    "pkce",
+    "consent"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:oauth-scopes-are-delegated-grants-not-application-permissions",
+    "adr:oauth-deployments-follow-the-current-security-bcp",
+    "adr:client-redirect-and-resource-boundaries-are-explicit"
+  ]
+}

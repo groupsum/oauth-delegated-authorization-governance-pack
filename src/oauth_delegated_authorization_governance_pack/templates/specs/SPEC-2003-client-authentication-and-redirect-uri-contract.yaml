@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:client-authentication-and-redirect-uri-contract",
+  "number": 2003,
+  "slug": "client-authentication-and-redirect-uri-contract",
+  "title": "Client Authentication And Redirect Uri Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines client authentication, registration, and redirect URI validation.",
+  "body": "## Requirements\n\n- Use exact registered redirect URI matching.\n- Apply authentication appropriate to public and confidential clients.\n- Rotate and revoke client credentials safely.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9700",
+    "https://www.rfc-editor.org/rfc/rfc6749"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "oauth",
+    "delegated-authorization",
+    "scopes",
+    "pkce",
+    "consent"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:oauth-scopes-are-delegated-grants-not-application-permissions",
+    "adr:oauth-deployments-follow-the-current-security-bcp",
+    "adr:client-redirect-and-resource-boundaries-are-explicit"
+  ]
+}
